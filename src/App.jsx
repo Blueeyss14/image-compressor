@@ -25,7 +25,7 @@ const App = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
       <div className="container mx-auto px-4 py-8">
         <Header />
 
@@ -64,7 +64,7 @@ const App = () => {
           height: 20px;
           width: 20px;
           border-radius: 50%;
-          background: linear-gradient(135deg, rgb(59 130 246), rgb(147 51 234));
+          background: linear-gradient(135deg, rgb(59 130 246), rgb(66, 117, 197));
           cursor: pointer;
           box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
         }
@@ -73,7 +73,6 @@ const App = () => {
           height: 20px;
           width: 20px;
           border-radius: 50%;
-          background: linear-gradient(135deg, rgb(59 130 246), rgb(147 51 234));
           cursor: pointer;
           border: none;
           box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);

@@ -5,7 +5,7 @@ import { ImageCompressorService } from '../services/service';
 export const Header = () => (
   <div className="text-center mb-12">
     <div className="flex justify-center mb-4">
-      <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl">
+      <div className="p-3 bg-gradient-to-r from-blue-400 to-blue-500 rounded-2xl">
         <FileImage className="h-8 w-8 text-white" />
       </div>
     </div>
@@ -109,7 +109,7 @@ export const DropZone = ({ onDrop, onFileSelect, dragActive, setDragActive, disa
         <button
           onClick={() => fileInputRef.current?.click()}
           disabled={disabled}
-          className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         >
           Choose Files
         </button>
@@ -253,11 +253,11 @@ export const EmptyState = () => (
 
 export const ResultsSection = ({ images, onDownloadImage, onRemoveImage, onDownloadAll, onClearAll }) => (
   <div className="max-w-4xl mx-auto">
-    <div className="flex justify-between items-center mb-6">
+    <div className="flex justify-between items-center mb-6 [@media(max-width:600px)]:flex-col [@media(max-width:600px)]:items-start">
       <h2 className="text-2xl font-bold text-white">
         Compressed Images ({images.length})
       </h2>
-      <div className="flex gap-3">
+      <div className="flex gap-3 [@media(max-width:600px)]:mt-5 [@media(max-width:600px)]:w-full [@media(max-width:600px)]:justify-between">
         <button
           onClick={onDownloadAll}
           className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition-colors"
