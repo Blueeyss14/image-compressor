@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from 'react';
+import { useRef, useCallback } from 'react';
 import { Upload, Download, FileImage, Trash2, Settings } from 'lucide-react';
 import { ImageCompressorService } from './services';
 
