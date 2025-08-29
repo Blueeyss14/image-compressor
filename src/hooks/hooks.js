@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import { useImageStore } from './store';
-import { ImageCompressorService } from './services';
+import { useImageStore } from '../state/store';
+import { ImageCompressorService } from '../services/service';
 
 export const useImageProcessor = () => {
   const store = useImageStore();

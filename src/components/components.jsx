@@ -1,6 +1,6 @@
 import { useRef, useCallback } from 'react';
 import { Upload, Download, FileImage, Trash2, Settings } from 'lucide-react';
-import { ImageCompressorService } from './services';
+import { ImageCompressorService } from '../services/service';
 
 export const Header = () => (
   <div className="text-center mb-12">
@@ -9,7 +9,7 @@ export const Header = () => (
         <FileImage className="h-8 w-8 text-white" />
       </div>
     </div>
-    <h1 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+    <h1 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text ">
       Image Compressor
     </h1>
     <p className="text-slate-300 text-lg">Compress your images with smart quality control</p>
